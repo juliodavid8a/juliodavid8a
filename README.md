@@ -1,6 +1,5 @@
 # Julio David Ochoa
 
-**$30 built the factory. ~$4 ships each app after that.**
 
 [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
