@@ -7,7 +7,7 @@
 [![MCP](https://img.shields.io/badge/-Model_Context_Protocol-7C3AED?style=flat-square&logoColor=white)](https://modelcontextprotocol.io/)
 [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com/)
 
-TPM in payments — 6+ years at Mastercard in authentication, certification, and card lifecycle. CS from Universidad Simón Bolívar. MIS from Washington University in St. Louis.
+TPM in payments — 6+ years in authentication, certification, and card lifecycle. CS from Universidad Simón Bolívar. MIS from Washington University in St. Louis.
 
 By night I build **Factoria**: a portfolio of AI-powered products orchestrated by a methodology I developed for human-AI collaboration. 47 formalized principles. 42 milestones shipped with zero deferrals. The methodology became the product.
 
@@ -31,7 +31,7 @@ The methodology turned into software. Perse is a self-hosted platform where work
 
 Mom WhatsApps a grocery list in Venezuelan Spanish → AI parses it → matches against a real supermarket catalog → builds the cart → son pays. 12 milestones shipped covering grocery flow, family identity, delegated payments, spending visibility, and a full security audit.
 
-`~530 tests` · `8 Supabase migrations` · `SAP Commerce Cloud OCC v2` · `Mastercard Agent Pay` · `Claude-powered parser/ranker`
+`~530 tests` · `8 Supabase migrations` · `SAP Commerce Cloud OCC v2` · `Agent Pay integration` · `Claude-powered parser/ranker`
 
 📣 **[Megafono](https://github.com/juliodavid8a/Megafono)** · Content OS for publishing the methodology
 
@@ -92,7 +92,7 @@ Building transformers, RLHF, and agents from first principles — not fine-tunin
 
 ---
 
-> *"I went from being the MCP server to building one."*
+> *"I stopped being the orchestrator and built the environment that orchestrates itself."*
 
 [![LinkedIn](https://img.shields.io/badge/-Julio_Ochoa-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliodavid8a)
 [![GitHub](https://img.shields.io/badge/-juliodavid8a-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/juliodavid8a)
