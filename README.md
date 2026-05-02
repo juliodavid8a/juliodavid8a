@@ -7,7 +7,7 @@
 [![MCP](https://img.shields.io/badge/-Model_Context_Protocol-7C3AED?style=flat-square&logoColor=white)](https://modelcontextprotocol.io/)
 [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com/)
 
-TPM in payments — 6+ years in authentication, certification, and card lifecycle. CS from Universidad Simón Bolívar. MIS from Washington University in St. Louis.
+TPM in digital payments — 6+ years in authentication, certification, and card lifecycle. CS from Universidad Simón Bolívar. MIS from Washington University in St. Louis.
 
 By night I build **Factoria**: a portfolio of AI-powered products orchestrated by a methodology I developed for human-AI collaboration. 47 formalized principles. 42 milestones shipped with zero deferrals. The methodology became the product.
 
@@ -106,7 +106,7 @@ The "8a" stands for Ochoa.
 
 Born in Venezuela, educated in the US, building for both worlds. Provisions exists because my mom sends grocery lists in Venezuelan Spanish on WhatsApp and I got tired of being the relay.
 
-6+ years in payments taught me that protocols matter, failure modes compound, and every system needs an andon cord. The sparks came from applying that thinking to AI collaboration.
+6+ years in digital payments taught me that protocols matter, failure modes compound, and every system needs an andon cord. The sparks came from applying that thinking to AI collaboration.
 
 The factory thesis: the methodology compounds. Each session makes the next one cheaper. 42 milestones shipped with zero deferrals — not because of perfection, but because the system catches failures before they ship.
 
