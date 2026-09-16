@@ -1,88 +1,115 @@
 # Julio David Ochoa
 
 [![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
 [![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/)
-[![Claude](https://img.shields.io/badge/-Claude-D4A574?style=flat-square&logo=anthropic&logoColor=white)](https://claude.ai/)
+[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![MCP](https://img.shields.io/badge/-Model_Context_Protocol-7C3AED?style=flat-square&logoColor=white)](https://modelcontextprotocol.io/)
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com/)
+[![Railway](https://img.shields.io/badge/-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://railway.app/)
 
-TPM in digital payments — 6+ years in authentication, certification, and card lifecycle. CS from Universidad Simón Bolívar. MIS from Washington University in St. Louis.
+**Deterministic controls around nondeterministic intelligence.**
 
-By night I build **Factoria**: a portfolio of AI-powered products orchestrated by a methodology I developed for human-AI collaboration. 47 formalized principles. 42 milestones shipped with zero deferrals. The methodology became the product.
+Eighteen years of making systems that move money behave, most recently in technology assurance at a global payments network. Since January 2026 the same discipline has been pointed at AI: a production line that plans, builds, checks its own work, and writes down what broke. This profile is the record.
 
----
-
-## The Product
-
-🏛️ **[Perse](https://github.com/juliodavid8a/perse)** · Agentless work management platform
-
-The methodology turned into software. Perse is a self-hosted platform where work flows through structured phases (capture → shape → build → verify → ship), AI workers execute independently via MCP, and manufactured consensus verifies results — N workers attempt the same task, convergence = auto-ship, divergence = human judgment.
-
-`42 milestones + 14 features` · `452 tests` · `35 migrations` · `TypeScript + Hono + React + Postgres + Docker` · `Deployed on Railway` · `MCP-first` · `Self-documenting wiki + D3 knowledge graph` · `GitHub webhook automation` · `Multi-model (Anthropic, OpenAI, xAI, Google)`
-
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/github?repo=juliodavid8a/perse)
+| | |
+|---|---|
+| Craft | agent harnesses · assurance · payments |
+| Building since | 2026.1 · with an AI collaborator |
+| Stack | TypeScript · Python · SQL · MCP |
+| Education | MS IS, Washington University in St. Louis · BS Computer Engineering, Universidad Simón Bolívar |
+| Based | New York metro |
 
 ---
 
-## The Products Built on It
+## What shipped since January
 
-🛒 **[Provisions](https://github.com/juliodavid8a/GrocerBot)** · Family financial concierge
+| | verified |
+|---|---|
+| **5** products through the loop | 2026-09-12 |
+| **1,080** pull requests merged | 2026-09-12 |
+| **42** Perse milestones | 2026-09-11 |
+| **36** weeks on the line | 2026-09-12 |
 
-Mom WhatsApps a grocery list in Venezuelan Spanish → AI parses it → matches against a real supermarket catalog → builds the cart → son pays. 12 milestones shipped covering grocery flow, family identity, delegated payments, spending visibility, and a full security audit.
-
-`~530 tests` · `8 Supabase migrations` · `SAP Commerce Cloud OCC v2` · `Agent Pay integration` · `Claude-powered parser/ranker`
-
-📣 **[Megafono](https://github.com/juliodavid8a/Megafono)** · Content OS for publishing the methodology
-
-🎮 **Bottega** *(in design)* · AI-powered mobile game factory for passive income
-
----
-
-## The Factory (Factoria v1 — the foundation)
-
-Before Perse was a product, it was a methodology developed across these tools:
-
-🗓️ **[Flow](https://github.com/juliodavid8a/flow-app)** · Energy-aware task scheduling · 918+ tests · WhatsApp + MCP server · React + Supabase
-
-🧪 **[Ship Lab](https://github.com/juliodavid8a/Ship-Lab)** · 6 AI-powered audit labs (security, brand, QA, cost, compliance, feedback) · 633+ tests · 22K LOC
-
-⚡ **[CC-Runner](https://github.com/juliodavid8a/cc-runner)** · Headless Claude Code execution via MCP · Live on Railway · Supabase telemetry
-
-🧠 **[Personal Wiki](https://github.com/juliodavid8a/personal-wiki)** · Knowledge graph + spaced repetition · 328+ nodes · 325+ edges · 62 MCP tools
+The full account, month by month, is on [factoria.dev](https://factoria.dev).
 
 ---
 
-## Learning ML from Scratch
+## The line
 
-Building transformers, RLHF, and agents from first principles — not fine-tuning, implementing:
+🏛️ **[Perse](https://github.com/juliodavid8a/perse)** · the collaboration OS · LIVE, 24/7 loop
 
-🧠 **[MiniGPT](https://github.com/juliodavid8a/minigpt)** · Character-level GPT in PyTorch. Attention, positional encoding, autoregressive generation — every component from scratch.
+An agent harness: the half of an AI system that lives around the model. Work enters as a Form with a stated intent and flows capture → shape → build → verify → ship → persist. Ephemeral workers plan against the repository, call real tools, and write every observation to the record before the next step. They never coordinate with each other; the environment does. Memory lives in Postgres, not the context window. Failure is designed for: typed returns, parked premises, reaped sessions, a liveness detector that trusts fire evidence over self-report.
 
-🎯 **[MiniRLHF](https://github.com/juliodavid8a/minirlhf)** · RLHF pipeline: reward modeling on preference pairs, PPO fine-tuning, KL penalty. Understanding alignment by building it.
+`42 milestones` · `1,500+ tests` · `64 migrations` · `TypeScript · Hono · React · Postgres 16 · MCP over OAuth` · `Railway` · `harness-portable: Claude Code, Cursor and Codex lanes on one canon`
 
-🤖 **[MiniAgent](https://github.com/juliodavid8a/miniagent)** · AI agent framework from scratch. Tool use, planning, memory — the components behind systems like Claude Code.
+The harness builds itself. The operator's share is the loop design, the gates, the diffs that matter, and the veto.
 
 ---
 
-## Sparks
+## What came through it
 
-47 philosophical principles extracted from building — not theory, patterns that emerged from real failures and real sessions:
+🏭 **[Factoria](https://github.com/juliodavid8a/factoria)** · the factory that learns · LIVE
 
-> *"Fork, don't subagent"*
-> The environment orchestrates, not the agent. AI instances are ephemeral workers — born, read state, execute, write results, die. Zero context tax.
+One canon across every app; the site renders from the tables the loop writes. Parity tests read the committed design.
 
-> *"Manufactured consensus"*
-> You can't make one output deterministic, but N independent workers converging manufactures determinism. The bug (variance) becomes the feature (verification).
+🏠 **[CasaCommand](https://github.com/juliodavid8a/casacommand)** · the family OS · IN BUILD
 
-> *"The retrospective oracle"*
-> The system that learns *what* to build is valuable. The system that learns *how* to build is compounding.
+A shared app for running a household: chores, routines, supplies, and who does what. Passkeys and server-side first boot on main.
 
-> *"Speed through precision"*
-> Precision is the multiplier. Route cognitive work to the cheapest layer that can handle it.
+🔎 **[Apolonia](https://github.com/juliodavid8a/Apolonia)** · the job-finder agent · IN BUILD
 
-> *"The methodology is the product"*
-> The collaboration OS is the real invention. Perse is the proof.
+Mutual-match hiring. Watches job boards, scores postings against a household relocation plan, delivers a daily report and two alert tiers. Three design contracts, v1 to v3.
+
+🩻 **[Xray](https://github.com/juliodavid8a/Xray)** · see repo health, trust the score, fix with a PR · IN BUILD
+
+Scans a repository, scores its health with explicit evidence and confidence, renders it as a 3D scene, and opens a pull request that fixes a finding, then re-scans the branch and posts the realized delta. Pull requests only; never a direct commit.
+
+Also on the floor: **Best Fit** (job search that swipes back, in build), **[Pythia](https://github.com/juliodavid8a/pythia)** (multi-model deliberation, research), **[Trail Walker](https://github.com/juliodavid8a/trail-walker)** (virtual long-distance hiking, prototype), **[Provisions](https://github.com/juliodavid8a/provisions)** (family grocery concierge over WhatsApp), and fifteen projected products queued behind them.
+
+---
+
+## Before the line (the tools the methodology came from)
+
+🗓️ **[Flow](https://github.com/juliodavid8a/flow-app)** · energy-aware task scheduling · 918+ tests · WhatsApp + MCP server
+
+🧠 **[Personal Wiki](https://github.com/juliodavid8a/personal-wiki)** · knowledge graph + spaced repetition · 62 MCP tools · the wiki that turned out to be an orchestrator
+
+🧪 **[Ship Lab](https://github.com/juliodavid8a/Ship-Lab)** · six AI-powered audit labs (security, brand, QA, cost, compliance, feedback) · 633+ tests
+
+⚡ **[CC-Runner](https://github.com/juliodavid8a/cc-runner)** · headless Claude Code execution via MCP · the first harness
+
+---
+
+## Learning ML from scratch
+
+Building transformers, RLHF, and agents from first principles, implementing rather than fine-tuning:
+
+🧠 **[MiniGPT](https://github.com/juliodavid8a/minigpt)** · character-level GPT in PyTorch. Attention, positional encoding, autoregressive generation, every component from scratch.
+
+🎯 **[MiniRLHF](https://github.com/juliodavid8a/minirlhf)** · reward modeling on preference pairs, PPO fine-tuning, KL penalty. Understanding alignment by building it.
+
+🤖 **[MiniAgent](https://github.com/juliodavid8a/miniagent)** · tool use, planning, memory. The components behind the harnesses above.
+
+---
+
+## Doctrine
+
+Four articles, ratified from real failures. Each one carries the incident that wrote it.
+
+> **Everything is a Form.** Nothing is ever "just remembered."
+
+> **Verification over trust.** State is proven, not claimed. Work that fails the gate goes back, not forward.
+
+> **Gates relocate, never disappear.** When a control moves from a person to the substrate, it must still exist.
+
+> **Zero sparks is a healthy day.** A spark is a lesson written down after a real failure. The factory's permanent memory.
+
+Sparks so far:
+
+> *Silent success is worse than loud failure.*
+> *Two sources of truth means one is always a lie.*
+> *The wiki is the orchestrator; workers are wind.*
+> *Autonomy decouples; the substrate re-couples.*
+> *The verify gate degrades at the divergence rate.*
 
 ---
 
@@ -92,10 +119,10 @@ Building transformers, RLHF, and agents from first principles — not fine-tunin
 
 ---
 
-> *"I stopped being the orchestrator and built the environment that orchestrates itself."*
+> *Technology assurance reduced to two habits: write down the ask before starting, write down what broke after. Everything since January is those two habits, compounding.*
 
-[![LinkedIn](https://img.shields.io/badge/-Julio_Ochoa-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliodavid8a)
-[![GitHub](https://img.shields.io/badge/-juliodavid8a-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/juliodavid8a)
+[![LinkedIn](https://img.shields.io/badge/-Julio_David_Ochoa-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/juliodavid)
+[![Email](https://img.shields.io/badge/-juliodavid8a%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:juliodavid8a@gmail.com)
 
 <details>
 <summary>More about me</summary>
@@ -104,11 +131,11 @@ Building transformers, RLHF, and agents from first principles — not fine-tunin
 
 The "8a" stands for Ochoa.
 
-Born in Venezuela, educated in the US, building for both worlds. Provisions exists because my mom sends grocery lists in Venezuelan Spanish on WhatsApp and I got tired of being the relay.
+A computer engineer out of Venezuela, educated in the US, building for both worlds. The first systems that had to behave were online banking modules and an 80-ATM estate, machines that cannot be allowed to fail quietly. Then remote check-deposit across 115 facilities and two million monthly transactions, eight banks and eight formats reconciled correctly every night. Then most of a decade making payments programs behave at a global network: cloud tokens for major browsers, a PCI recertification compressed from six months to under two, anti-money-laundering automation, consent and privacy.
 
-6+ years in digital payments taught me that protocols matter, failure modes compound, and every system needs an andon cord. The sparks came from applying that thinking to AI collaboration.
+A token is a promise that a credential works here and nowhere else. Trust for money was the training for trust for intelligence.
 
-The factory thesis: the methodology compounds. Each session makes the next one cheaper. 42 milestones shipped with zero deferrals — not because of perfection, but because the system catches failures before they ship.
+Provisions exists because my mom sends grocery lists in Venezuelan Spanish on WhatsApp and I got tired of being the relay.
 
 Powered by espressos and the belief that I haven't yet lived up to what I can do.
 
