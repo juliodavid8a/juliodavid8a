@@ -6,11 +6,11 @@
 
 **Deterministic controls around nondeterministic intelligence.**
 
-Eighteen years of making systems that move money behave, most recently in technology assurance at a global payments network. Since January 2026 the same discipline has been pointed at AI: a production line that plans, builds, checks its own work, and writes down what broke. This profile is the record.
+Eighteen years running programs that move money, most recently in technology assurance at a global payments network. Since January 2026, running a program that builds software: a production line that plans, builds, checks its own work, and writes down what broke. This profile is the record.
 
 | | |
 |---|---|
-| Craft | agent harnesses · assurance · payments |
+| Craft | program delivery · agent harnesses · payments |
 | Building since | 2026.1 · with an AI collaborator |
 | Stack | TypeScript · Python · SQL · MCP |
 | Education | MS IS, Washington University in St. Louis · BS Computer Engineering, Universidad Simón Bolívar |
