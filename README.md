@@ -14,7 +14,7 @@ Eighteen years running programs that move money, most recently in technology ass
 | Building since | 2026.1 · with an AI collaborator |
 | Stack | TypeScript · Python · SQL · MCP |
 | Education | MS IS, Washington University in St. Louis · BS Computer Engineering, Universidad Simón Bolívar |
-| Based | New York metro |
+| Based | New York |
 
 ---
 
