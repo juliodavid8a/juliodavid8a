@@ -6,7 +6,7 @@
 
 **Deterministic controls around nondeterministic intelligence.**
 
-Founder of [552.studio](https://552.studio), a studio in New York building software with an AI production line: a written ask goes in, and a tested, reviewed pull request comes out. The background is a decade of payments and technology programs and controls, the discipline behind the line's gates. Since January 2026 the line plans, builds, checks its own work, and writes down what broke. This profile is the short record.
+Founder of [552.studio](https://552.studio), a studio in New York building software with an AI production line: a written ask goes in, and a tested, reviewed pull request comes out. The background is eighteen years of payments and technology programs and controls, the discipline behind the line's gates. Since January 2026 the line plans, builds, checks its own work, and writes down what broke. This profile is the short record.
 
 | | |
 |---|---|
@@ -24,7 +24,7 @@ Founder of [552.studio](https://552.studio), a studio in New York building softw
 | | verified |
 |---|---|
 | **5** products through the loop | 2026-11-18 |
-| **3,236** pull requests merged across every repository the studio owns | 2026-11-04 |
+| **3,421** pull requests merged across every repository the studio owns | 2026-11-18 |
 | **2,576** Forms shipped through Perse | 2026-11-18 |
 | **45** weeks on the line | 2026-11-18 |
 
@@ -127,7 +127,7 @@ Five of the fifty sparks on the ledger:
 
 The "8a" stands for Ochoa.
 
-A computer engineer out of Venezuela, educated in the US, building for both worlds. The first systems that had to behave were online banking modules and an 80-ATM estate, machines that cannot be allowed to fail quietly. Then remote check-deposit across 115 facilities and two million monthly transactions, eight banks and eight formats reconciled correctly every night. Then most of a decade making payments programs behave at a global network: cloud tokens for major browsers, a PCI recertification compressed from six months to under two, anti-money-laundering automation, consent and privacy.
+A computer engineer out of Venezuela, educated in the US, building for both worlds. The first systems that had to behave were online banking modules and an 80-ATM estate, machines that cannot be allowed to fail quietly. Then remote check-deposit across 115 facilities and two million monthly transactions, eight banks and eight formats reconciled correctly every night. Then most of a decade making payments programs behave at scale: tokenization, a compliance recertification compressed from six months to under two, anti-money-laundering automation, consent and privacy.
 
 A token is a promise that a credential works here and nowhere else. Trust for money was the training for trust for intelligence.
 
