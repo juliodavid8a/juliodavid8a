@@ -102,6 +102,17 @@ flowchart LR
 **[CasaCommand](https://552.studio/work/proj-casacommand)** · natural-language intake into shared task cards · 503 tests
 - Hono + React 19 PWA, passkey auth, Web Push, and first-boot provisioning from the UI with no separate ops step.
 
+**Trail Walker** · Android app that turns treadmill walks into a virtual long-distance hike · 25 merged PRs · private
+- Expo / React Native (TypeScript, expo-router). Reads live speed and distance over Bluetooth LE: a FitShow-protocol walking pad, decoded against the real hardware, plus a standard FTMS adapter.
+- An Android foreground service keeps capturing while the screen is locked. Sessions persist to SQLite incrementally and recover after a crash or force-kill.
+- Distance is mapped onto a real route with elevation. Calories use a grade-aware ACSM walking model. Strava upload goes through OAuth brokered by a stateless worker that stores nothing.
+- Local-first and free to run: no account, works offline, and needs no paid backend.
+
+**Provisions** · conversational grocery-ordering agent · pre-launch · private
+- A pasted WhatsApp shopping list is parsed by a language model into structured items. The items are matched against a live commerce catalog (SAP Commerce Cloud OCC) and assembled into a cart.
+- Hono + Postgres (postgres.js, SQL migrations), phone-OTP sign-in delivered through the WhatsApp Cloud API with Better Auth, and a React 19 + Vite front end.
+- Delegated payment authorization with verifiable intent proofs, bill splitting and spending visibility. Live login waits on messaging-platform template approval. The OTP path is built and tested against a stubbed sender.
+
 **Factoria** · the studio site (Next.js 15) renders its copy and figures from Postgres rows (94 migrations), not from components. It builds and runs with no database, falling back to seed constants. Every public route is smoke-tested after deploy, and Lighthouse assertions cover performance. Public at [552.studio](https://552.studio).
 
 ---
@@ -122,6 +133,18 @@ From-scratch implementations in PyTorch, written to understand the parts rather 
 
 ---
 
-[![Email](https://img.shields.io/badge/-julio%40552.studio-171715?style=flat-square)](mailto:julio@552.studio)
+## Experience
 
-<sub>Background: eighteen years in banking and payments technology, from ATM estates and remote check-deposit systems to large-scale programs and controls. Story and product pages: [552.studio](https://552.studio).</sub>
+Eighteen years across software engineering, enterprise IT delivery, product management and technical program leadership. Employers are described by industry.
+
+| Years | Role | Engineering scope |
+|---|---|---|
+| 2026 – now | Independent builder, [552.studio](https://552.studio) | Architect, operator and final reviewer of the systems above: the delivery harness, its CI and merge gates, and seven products. |
+| 2018 – now | Principal / Lead Technical Program Manager, large financial-technology company | Led transformation programs spanning **250+ developers and 70+ product team members**, from planning and dependency management to risk, steering and production launch with external platform partners. Turned complex platform capabilities into delivery roadmaps with explicit scope, milestones, acceptance criteria and ownership. Ran annual secure-coding readiness for **200+ engineers**. Embedded Agile practices that sustained a **10%+ velocity gain over seven months at 95% shipping predictability**. Introduced an operating model for **170 engineers** that improved predictability by **25%** and sprint acceptance by **50%**. Now leads governance for technology-assurance audit portfolios (SOC 1, SOC 2, ISAE): remediation across vulnerability management, access reviews and security monitoring. Built the team's reporting suite (Python normalization pipeline, data model, Power BI) and a knowledge assistant grounded in 31 curated sources with confidence scoring and source references. Earlier in this period: lead program manager for an anti-money-laundering automation initiative across eight internal teams and a vendor, and consent-management cycle time cut from **20 days to 8**. |
+| 2016 – 2017 | Product Manager, payment-processing company | Migrated **6,000 merchant clients** to a new card-network pricing program, adding **$120K/month** in gross margin. Designed a platform feature with **$95K** projected three-year savings. Extended backlog forecasting from one sprint to four across four teams. |
+| 2010 – 2014 | New Technologies Analyst / IT Project Manager, large consumer-goods manufacturer | Integrated **eight B2B remote-check-deposit solutions across 115 facilities**, handling **2M+ transactions a month**. Cash flow rose **80%** and processing time fell **66%**. Also deployed enterprise collaboration and digital-signage platforms. |
+| 2008 – 2010 | Web Application Developer, banking-technology vendor | Designed three online-banking modules (Java EE: JSP, EJB, SQL). Wrote C++ customizations for an **80-ATM** estate. |
+
+---
+
+[![Email](https://img.shields.io/badge/-julio%40552.studio-171715?style=flat-square)](mailto:julio@552.studio)
