@@ -6,7 +6,7 @@
 
 **Deterministic controls around nondeterministic intelligence.**
 
-Eighteen years running programs that move money, most recently in technology assurance at a global payments network. Since January 2026, running a program that builds software: a production line that plans, builds, checks its own work, and writes down what broke. This profile is the record.
+Founder of [552.studio](https://552.studio), a studio in New York building software with an AI production line: a written ask goes in, and a tested, reviewed pull request comes out. The background is a decade of payments and technology programs and controls, the discipline behind the line's gates. Since January 2026 the line plans, builds, checks its own work, and writes down what broke. This profile is the short record.
 
 | | |
 |---|---|
@@ -14,6 +14,7 @@ Eighteen years running programs that move money, most recently in technology ass
 | Building since | 2026.1 · with an AI collaborator |
 | Stack | TypeScript · Python · SQL · MCP |
 | Education | MS IS, Washington University in St. Louis · BS Computer Engineering, Universidad Simón Bolívar |
+| Languages | English · Spanish |
 | Based | New York |
 
 ---
@@ -22,57 +23,62 @@ Eighteen years running programs that move money, most recently in technology ass
 
 | | verified |
 |---|---|
-| **5** products through the loop | 2026-09-30 |
-| **1,607** pull requests merged across six repositories | 2026-09-30 |
-| **38** weeks on the line | 2026-09-30 |
+| **5** products through the loop | 2026-11-18 |
+| **3,236** pull requests merged across every repository the studio owns | 2026-11-04 |
+| **2,576** Forms shipped through Perse | 2026-11-18 |
+| **45** weeks on the line | 2026-11-18 |
 
-The full account, month by month, is on [juliodavid8a.com](https://juliodavid8a.com).
+The full account, with live figures, is on [552.studio](https://552.studio).
 
 ---
 
 ## The line
 
-🏛️ **[Perse](https://github.com/juliodavid8a/perse)** · the collaboration OS · LIVE, 24/7 loop
+🏛️ **[Perse](https://552.studio/work/proj-perse)** · the engine that runs the line · LIVE, 24/7 loop · sign-in required
 
 An agent harness: the half of an AI system that lives around the model. Work enters as a Form with a stated intent and flows capture → shape → build → verify → ship → persist. Ephemeral workers plan against the repository, call real tools, and write every observation to the record before the next step. They never coordinate with each other; the environment does. Memory lives in Postgres, not the context window. Failure is designed for: typed returns, parked premises, reaped sessions, a liveness detector that trusts fire evidence over self-report.
 
-`42 milestones` · `1,500+ tests` · `64 migrations` · `TypeScript · Hono · React · Postgres 16 · MCP over OAuth` · `Railway` · `harness-portable: Claude Code, Cursor and Codex lanes on one canon`
+`42 milestones` · `10,700+ tests` · `184 migrations` · `TypeScript · Hono · React · Postgres 16 · MCP over OAuth` · `Railway` · `harness-portable: one canon across Claude Code, Codex, Cursor and external lanes`
 
 The harness builds itself. The operator's share is the loop design, the gates, the diffs that matter, and the veto.
+
+🏭 **[Factoria](https://552.studio)** · the production line, and the studio's record · LIVE
+
+One canon across every app; the site renders from the tables the loop writes. Parity tests read the committed design.
 
 ---
 
 ## What came through it
 
-🏭 **[Factoria](https://github.com/juliodavid8a/factoria)** · the factory that learns · LIVE
+🩻 **[Xray](https://552.studio/work/proj-xray)** · see repo health, trust the score, fix with a PR · LIVE · sign in with GitHub
 
-One canon across every app; the site renders from the tables the loop writes. Parity tests read the committed design.
+Scans a repository, scores its health with evidence you can click, renders it as a 3D scene, and opens a pull request that fixes a finding, then re-scans the branch and posts the realized delta. Pull requests only; never a direct commit.
 
-🏠 **[CasaCommand](https://github.com/juliodavid8a/casacommand)** · the family OS · IN BUILD
+🏠 **[CasaCommand](https://552.studio/work/proj-casacommand)** · shared task cards for a group · PRIVATE BETA
 
-A shared app for running a household: chores, routines, supplies, and who does what. Passkeys and server-side first boot on main.
+One sentence becomes shared task cards, claimed and done without scores. Passkeys and server-side first boot.
 
-🔎 **[Apolonia](https://github.com/juliodavid8a/Apolonia)** · the job-finder agent · IN BUILD
+🔎 **[Apolonia](https://552.studio/work/proj-apolonia)** · the career-intelligence assistant · IN DEVELOPMENT
 
-Mutual-match hiring. Watches job boards, scores postings against a stated plan, delivers a daily report and two alert tiers. Three design contracts, v1 to v3.
+Watches job boards, scores every posting against written criteria, and delivers a daily report and two alert tiers.
 
-🩻 **[Xray](https://github.com/juliodavid8a/Xray)** · see repo health, trust the score, fix with a PR · IN BUILD
+🔮 **[Pythia](https://552.studio/work/proj-pythia)** · multi-model deliberation · SIMULATION, live trading off
 
-Scans a repository, scores its health with explicit evidence and confidence, renders it as a 3D scene, and opens a pull request that fixes a finding, then re-scans the branch and posts the realized delta. Pull requests only; never a direct commit.
+An oracle of models debates a strategy and every trade before simulated execution. Live trading is structurally off.
 
-Also on the floor: **[Pythia](https://github.com/juliodavid8a/pythia)** (multi-model deliberation, research), **[Trail Walker](https://github.com/juliodavid8a/trail-walker)** (virtual long-distance hiking, prototype), and **[Provisions](https://github.com/juliodavid8a/provisions)** (family grocery concierge over WhatsApp).
+Also on the floor: **Trail Walker** (virtual long-distance hiking, prototype) and **Provisions** (family grocery concierge over WhatsApp).
 
 ---
 
 ## Before the line (the tools the methodology came from)
 
-🗓️ **[Flow](https://github.com/juliodavid8a/flow-app)** · energy-aware task scheduling · 918+ tests · WhatsApp + MCP server
+🗓️ **Flow** · energy-aware task scheduling · 918+ tests · WhatsApp + MCP server
 
-🧠 **[Personal Wiki](https://github.com/juliodavid8a/personal-wiki)** · knowledge graph + spaced repetition · 62 MCP tools · the wiki that turned out to be an orchestrator
+🧠 **Personal Wiki** · knowledge graph + spaced repetition · 62 MCP tools · the wiki that turned out to be an orchestrator
 
-🧪 **[Ship Lab](https://github.com/juliodavid8a/Ship-Lab)** · six AI-powered audit labs (security, brand, QA, cost, compliance, feedback) · 633+ tests
+🧪 **Ship Lab** · six AI-powered audit labs (security, brand, QA, cost, compliance, feedback) · 633+ tests
 
-⚡ **[CC-Runner](https://github.com/juliodavid8a/cc-runner)** · headless Claude Code execution via MCP · the first harness
+⚡ **CC-Runner** · headless Claude Code execution via MCP · the first harness
 
 ---
 
@@ -80,11 +86,11 @@ Also on the floor: **[Pythia](https://github.com/juliodavid8a/pythia)** (multi-m
 
 Building transformers, RLHF, and agents from first principles, implementing rather than fine-tuning:
 
-🧠 **[MiniGPT](https://github.com/juliodavid8a/minigpt)** · character-level GPT in PyTorch. Attention, positional encoding, autoregressive generation, every component from scratch.
+🧠 **MiniGPT** · character-level GPT in PyTorch. Attention, positional encoding, autoregressive generation, every component from scratch.
 
-🎯 **[MiniRLHF](https://github.com/juliodavid8a/minirlhf)** · reward modeling on preference pairs, PPO fine-tuning, KL penalty. Understanding alignment by building it.
+🎯 **MiniRLHF** · reward modeling on preference pairs, PPO fine-tuning, KL penalty. Understanding alignment by building it.
 
-🤖 **[MiniAgent](https://github.com/juliodavid8a/miniagent)** · tool use, planning, memory. The components behind the harnesses above.
+🤖 **MiniAgent** · tool use, planning, memory. The components behind the harnesses above.
 
 ---
 
@@ -100,7 +106,7 @@ Four articles, ratified from real failures. Each one carries the incident that w
 
 > **Zero sparks is a healthy day.** A spark is a lesson written down after a real failure. The factory's permanent memory.
 
-Sparks so far:
+Five of the fifty sparks on the ledger:
 
 > *Silent success is worse than loud failure.*
 > *Two sources of truth means one is always a lie.*
@@ -112,7 +118,7 @@ Sparks so far:
 
 > *Technology assurance reduced to two habits: write down the ask before starting, write down what broke after. Everything since January is those two habits, compounding.*
 
-[![Email](https://img.shields.io/badge/-juliodavid8a%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:juliodavid8a@gmail.com)
+[![Email](https://img.shields.io/badge/-julio%40552.studio-171715?style=flat-square)](mailto:julio@552.studio)
 
 <details>
 <summary>More about me</summary>
