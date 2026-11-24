@@ -6,7 +6,7 @@
 [![React](https://img.shields.io/badge/-React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![MCP](https://img.shields.io/badge/-Model_Context_Protocol-7C3AED?style=flat-square&logoColor=white)](https://modelcontextprotocol.io/)
 
-I build the control plane for autonomous software delivery: a Postgres-backed harness that takes a written work item through shaping, a coding agent, CI, merge and a durable record, and the products that have shipped through it. This page is the engineering view: architecture, decisions, tests and numbers. The studio story is on [552.studio](https://552.studio).
+552 Studio is a personal AI learning studio — learning and having fun with AI, not a business. This page is the engineering view of that practice: architecture, decisions, tests and numbers. The studio story is on [552.studio](https://552.studio).
 
 | | |
 |---|---|
@@ -15,24 +15,26 @@ I build the control plane for autonomous software delivery: a Postgres-backed ha
 | Education | MS Information Systems, Washington University in St. Louis · BS Computer Engineering, Universidad Simón Bolívar |
 | Based | New York · English and Spanish |
 
-## By the numbers (verified 2026-11-18)
+## By the numbers (verified 2026-11-24 14:28 ET)
 
 | Figure | Source |
 |---|---|
-| **3,422** merged pull requests across my repositories | GitHub search API, `is:pr is:merged user:juliodavid8a` |
-| **2,576** work items (Forms) taken to the final `persist` phase | Perse workspace summary |
+| **3,595 merged pull requests across 17 repositories (Jan–Nov 24, 2026, verified 2026-11-24 14:28 ET)** | GitHub search API, one query per owned repository: `is:pr is:merged repo:juliodavid8a/{repo} merged:2026-01-01..2026-11-24`. 17 of 20 owned repos had at least one merged PR. Cross-checked with `is:pr is:merged user:juliodavid8a merged:2026-01-01..2026-11-24`. |
+| **2,576** work items (Forms) taken to the final `persist` phase | Perse workspace summary (as of 2026-11-18) |
 | **10,768** passing tests in the Perse server suite, run in 3 shards | Perse CI, main-line run of Nov 18 |
 | **184** forward-only SQL migrations in Perse (numbered 001 to 189) | `packages/store/src/migrations` |
-| **~186k** lines of TypeScript source and **~238k** lines of tests in Perse | `git ls-files` + `wc -l`, blank lines included |
-| **232** autonomous agent sessions in the last 24 hours | Perse workspace summary |
+| **~186k** lines of TypeScript source and **~238k** lines of tests in Perse | `git ls-files` + `wc -l`, blank lines included (as of 2026-11-18) |
+| **232** autonomous agent sessions in the last 24 hours | Perse workspace summary (as of 2026-11-18) |
 
-All repositories below are private. Links go to public write-ups on 552.studio.
+All repositories below are private except this profile README. Links go to public write-ups on 552.studio.
+
+Nothing is live or launched. Perse, Apolonia, and CasaCommand are in friends-and-family testing. Everything else is not launched.
 
 ---
 
 ## Perse: the delivery harness
 
-[Write-up](https://552.studio/work/proj-perse) · 1,632 merged PRs · TypeScript monorepo (`apps/server`, `apps/web`, `packages/{core,store,verify,connect,realtime,ai-gateway}`)
+[Write-up](https://552.studio/work/proj-perse) · friends-and-family testing · TypeScript monorepo (`apps/server`, `apps/web`, `packages/{core,store,verify,connect,realtime,ai-gateway}`)
 
 A self-hosted runtime that turns a structured work item into a merged, tested pull request, and records what happened. One person sets intent and reviews the risky diffs; the mechanical work runs on cron-driven lanes.
 
@@ -83,59 +85,43 @@ flowchart LR
 
 ## Products built on the line
 
-**[Xray](https://552.studio/work/proj-xray)** · repository health scoring with fixes as PRs · 163 merged PRs · 1,821 tests (CI, Nov 11)
-- Pipeline split into packages with an enforced dependency direction: `analyzers` (clone, AST, coverage, Semgrep, OSV, jscpd, dependency-cruiser) → `scoring` (pure and deterministic, no I/O, never imports analyzers) → `patch`, the only package allowed to write to a scanned repo.
-- Honesty rules are enforced by gate tests. A failed analyzer reports a degraded result and never shows as healthy. Sampled scans never claim high confidence. The composite score caps at 95 and shows the reason.
-- Fixes arrive only as PRs through a GitHub App (`contents:write`, `pull_requests:write`, `checks:read`). It never commits directly or auto-merges. It re-scans the PR branch and posts the realized score change, even when that misses the projection.
-- React Three Fiber 3D view of the codebase, Hono + Better Auth, Postgres with plain forward-only SQL migrations and no ORM. A cohort regression harness keeps scoring thresholds stable.
+Nothing is live or launched. Perse, Apolonia, and CasaCommand are in friends-and-family testing. Everything else is not launched.
 
-**[Apolonia](https://552.studio/work/proj-apolonia)** · job-market monitoring and scoring agent · 280 merged PRs · 1,626 tests (CI, Nov 18) · 52 migrations
+**[Perse](https://552.studio/work/proj-perse)** · friends-and-family testing · the delivery harness described above.
+
+**[Apolonia](https://552.studio/work/proj-apolonia)** · friends-and-family testing · job-market monitoring and scoring agent
 - Ingestion adapters for job APIs, RSS feeds and IMAP mail, normalized into Postgres and scored against written criteria. Outputs: a daily report and two alert tiers over Web Push.
-- An in-app assistant whose model spend is metered by a ledger with a hard monthly limit. Without a configured limit, engine calls are refused.
-- Boot-time env validation: the server refuses to start without its required secrets. Optional features degrade loudly and are reported in `/api/health`.
-- Hono API + React 19 PWA with a service worker. Migrations and an idempotent seed run at boot. Database tests run against Postgres 16 in CI.
 
-**[Pythia](https://552.studio/work/proj-pythia)** · multi-agent deliberation for portfolio decisions · paper mode · 388 tests
-- Each cycle gathers context, drafts a strategy, has several models debate to consensus, then executes through a brokerage MCP behind execution guards, reconciliation and a circuit breaker.
-- Live trading is off by design. It needs an explicit flag and a passing evaluation-harness gate, and neither is set. Paired up/down SQL migrations and a shadow book for evaluation.
+**[CasaCommand](https://552.studio/work/proj-casacommand)** · friends-and-family testing · natural-language intake into shared task cards
+- Passkey auth, Web Push, and first-boot provisioning from the UI with no separate ops step.
 
-**[CasaCommand](https://552.studio/work/proj-casacommand)** · natural-language intake into shared task cards · 503 tests
-- Hono + React 19 PWA, passkey auth, Web Push, and first-boot provisioning from the UI with no separate ops step.
+**[Xray](https://552.studio/work/proj-xray)** · not launched · repository health scoring with fixes as PRs
+- Pipeline split into packages with an enforced dependency direction: `analyzers` → `scoring` (pure and deterministic, no I/O) → `patch`, the only package allowed to write to a scanned repo.
 
-**Trail Walker** · Android app that turns treadmill walks into a virtual long-distance hike · 25 merged PRs · private
-- Expo / React Native (TypeScript, expo-router). Reads live speed and distance over Bluetooth LE: a FitShow-protocol walking pad, decoded against the real hardware, plus a standard FTMS adapter.
-- An Android foreground service keeps capturing while the screen is locked. Sessions persist to SQLite incrementally and recover after a crash or force-kill.
-- Distance is mapped onto a real route with elevation. Calories use a grade-aware ACSM walking model. Strava upload goes through OAuth brokered by a stateless worker that stores nothing.
-- Local-first and free to run: no account, works offline, and needs no paid backend.
+**[Pythia](https://552.studio/work/proj-pythia)** · not launched · multi-agent deliberation for portfolio decisions, in simulation only
+- Trading is off by design. It needs an explicit flag and a passing evaluation-harness gate, and neither is set.
 
-**Provisions** · conversational grocery-ordering agent · pre-launch · private
-- A pasted WhatsApp shopping list is parsed by a language model into structured items. The items are matched against a live commerce catalog (SAP Commerce Cloud OCC) and assembled into a cart.
-- Hono + Postgres (postgres.js, SQL migrations), phone-OTP sign-in delivered through the WhatsApp Cloud API with Better Auth, and a React 19 + Vite front end.
-- Delegated payment authorization with verifiable intent proofs, bill splitting and spending visibility. Live login waits on messaging-platform template approval. The OTP path is built and tested against a stubbed sender.
+**Provisions** · not launched · private
+- Provisions is the evolution of GrocerBot, with monarch.com vibes: a household grocery and family-finance agent.
 
-**Factoria** · the studio site (Next.js 15) renders its copy and figures from Postgres rows (94 migrations), not from components. It builds and runs with no database, falling back to seed constants. Every public route is smoke-tested after deploy, and Lighthouse assertions cover performance. Public at [552.studio](https://552.studio).
+**Trail Walker** · not launched · private · Android app that turns treadmill walks into a virtual long-distance hike
+
+**Factoria** · the studio site (Next.js 15) renders its copy and figures from Postgres rows, not from components. Public at [552.studio](https://552.studio). 552 Studio is a personal AI learning studio — learning and having fun with AI, not a business.
 
 ---
 
 ## Earlier tools
 
-The harness grew out of these, all private:
+The harness grew out of these, all private and not launched:
 
 - **Flow**: energy-aware task scheduling with a messaging interface and an MCP server.
 - **Personal Wiki**: knowledge graph with spaced repetition. Its MCP tools became the first orchestrator.
 - **Ship Lab**: automated audit labs (security, QA, cost, compliance).
 - **CC-Runner**: headless coding-agent execution over MCP; the first harness.
 
-## ML from first principles
+## MiniGPT
 
-From-scratch implementations in PyTorch, written to understand the parts rather than to fine-tune:
-**MiniGPT** (character-level transformer: attention, positional encoding, autoregressive sampling) · **MiniRLHF** (reward model on preference pairs, PPO with KL penalty) · **MiniAgent** (tool use, planning, memory).
-
----
-
-## Experience
-
-I started as an engineer and never stopped building. My first two years were hands-on code at a banking-technology vendor: three online-banking modules in Java EE (JSP, EJB, SQL) and C++ customizations running on an 80-ATM estate. From there I moved into enterprise IT at a large consumer-goods manufacturer, where I integrated eight B2B remote-check-deposit systems across 115 facilities that process more than 2M transactions a month. That cut processing time by 66%. As a product manager at a payment-processing company I migrated 6,000 merchants onto a new card-network pricing platform. Since 2018 I've been a principal technical program manager at a large financial-technology company, running platform programs across 250+ developers. On those programs I write the scope, the dependency maps and the acceptance criteria that engineering teams build against. I also built the team's own tooling: a Python normalization pipeline and data model feeding Power BI, and a knowledge assistant that answers from 31 curated sources with confidence scores and source references. Along the way I've run secure-coding readiness for 200+ engineers and governance for SOC 1, SOC 2 and ISAE audits covering vulnerability management, access reviews and security monitoring. Since 2026 I've been the architect, operator and final reviewer of everything above at [552.studio](https://552.studio): the delivery harness, its CI and merge gates, and the products it ships.
+MiniGPT is early and in progress; the model is not implemented. Tokenizer, config, and data-loader work is under way as part of a planned nine-part v1. MiniRLHF and MiniAgent are not built.
 
 ---
 
